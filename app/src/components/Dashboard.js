@@ -36,36 +36,11 @@ function stableSort(array, comparator) {
 }
 
 const headCells = [
-  {
-    id: 'title',
-    numeric: false,
-    disablePadding: false,
-    label: 'Title',
-  },
-  {
-    id: 'author',
-    numeric: false,
-    disablePadding: false,
-    label: 'Author',
-  },
-  {
-    id: 'price',
-    numeric: false,
-    disablePadding: false,
-    label: 'Price',
-  },
-  {
-    id: 'stock',
-    numeric: false,
-    disablePadding: false,
-    label: 'Stock',
-  },
-  {
-    id: 'actions',
-    numeric: false,
-    disablePadding: false,
-    label: 'Actions',
-  },
+  { id: 'title', numeric: false, disablePadding: false, label: 'Title', },
+  { id: 'author', numeric: false, disablePadding: false, label: 'Author', },
+  { id: 'price', numeric: false, disablePadding: false, label: 'Price', },
+  { id: 'stock', numeric: false, disablePadding: false, label: 'Stock', },
+  { id: 'actions', numeric: false, disablePadding: false, label: 'Actions', },
 ];
 
 function EnhancedTableHead(props) {
@@ -173,8 +148,6 @@ EnhancedTableToolbar.propTypes = {
 };
 
 const Dashboard = () => {
-  const loginData = localStorage.getItem('loginData') ? JSON.parse(localStorage.getItem('loginData')) : null;
-
   const theme = useTheme();
 
   const [ books, setBooks ] = useState([]);
